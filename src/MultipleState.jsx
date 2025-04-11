@@ -1,17 +1,22 @@
 import { useState } from 'react';
 import { sculptureList } from './data.js';
-import Form from './Form.jsx';
+
 export default function Gallery() {
   const [index, setIndex] = useState(0);
+  const [showMore, setShowMore] = useState(false);
 
-  function handleClick() {
+  function handleNextClick() {
     setIndex(index + 1);
+  }
+
+  function handleMoreClick() {
+    setShowMore(!showMore);
   }
 
   let sculpture = sculptureList[index];
   return (
-    <div className='pl-8 pt-4'>
-      <button className='p-2 bg-blue-400 border-2 rounded-xl text-white' onClick={handleClick}>
+    <>
+      <button onClick={handleNextClick}>
         Next
       </button>
       <h2>
@@ -21,14 +26,14 @@ export default function Gallery() {
       <h3>
         ({index + 1} of {sculptureList.length})
       </h3>
+      <button onClick={handleMoreClick}>
+        {showMore ? 'Hide' : 'Show'} details
+      </button>
+      {showMore && <p>{sculpture.description}</p>}
       <img
         src={sculpture.url}
         alt={sculpture.alt}
       />
-      <p>
-        {sculpture.description}
-      </p>
-      <Form></Form>
-    </div>
+    </>
   );
 }
