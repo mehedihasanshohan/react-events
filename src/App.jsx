@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { sculptureList } from './data.js';
 import Form from './Form.jsx';
+import Counter from './Counter.jsx';
 export default function Gallery() {
   const [index, setIndex] = useState(0);
 
@@ -29,6 +30,7 @@ export default function Gallery() {
         {sculpture.description}
       </p>
       <Form></Form>
+      <Counter></Counter>
     </div>
   );
 }
