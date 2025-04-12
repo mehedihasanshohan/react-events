@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { sculptureList } from './data.js';
 import Form from './Form.jsx';
 import Counter from './Counter.jsx';
+import Batching from './Batching.jsx';
+import MovingDot from './MovingDot.jsx';
 export default function Gallery() {
   const [index, setIndex] = useState(0);
 
@@ -31,6 +33,8 @@ export default function Gallery() {
       </p>
       <Form></Form>
       <Counter></Counter>
+      <Batching></Batching>
+      <MovingDot></MovingDot>
     </div>
   );
 }
