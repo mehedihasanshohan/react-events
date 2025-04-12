@@ -6,6 +6,7 @@ import Batching from './Batching.jsx';
 import MovingDot from './MovingDot.jsx';
 import MultipleObjectsState from './assets/multipleObjectsState.jsx';
 import MultipleFieldSingleHandler from './MultipleFieldsSingleHandler.jsx';
+import NestedObjects from './NestedObjects.jsx';
 export default function Gallery() {
   const [index, setIndex] = useState(0);
 
@@ -39,6 +40,7 @@ export default function Gallery() {
       <MovingDot></MovingDot>
       <MultipleObjectsState></MultipleObjectsState>
       <MultipleFieldSingleHandler></MultipleFieldSingleHandler>
+      <NestedObjects></NestedObjects>
     </div>
   );
 }
