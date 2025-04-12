@@ -7,6 +7,8 @@ import MovingDot from './MovingDot.jsx';
 import MultipleObjectsState from './assets/multipleObjectsState.jsx';
 import MultipleFieldSingleHandler from './MultipleFieldsSingleHandler.jsx';
 import NestedObjects from './NestedObjects.jsx';
+import GitHubStats from './GithubStats.jsx';
+import GitHubSection from './GitSection.jsx';
 export default function Gallery() {
   const [index, setIndex] = useState(0);
 
@@ -41,6 +43,8 @@ export default function Gallery() {
       <MultipleObjectsState></MultipleObjectsState>
       <MultipleFieldSingleHandler></MultipleFieldSingleHandler>
       <NestedObjects></NestedObjects>
+      <GitHubStats></GitHubStats>
+      <GitHubSection></GitHubSection>
     </div>
   );
 }
