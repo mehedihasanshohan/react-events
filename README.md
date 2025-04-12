@@ -1,3 +1,27 @@
+# 🧠 React Events & State Basics
+
+This repository contains beginner-friendly examples and concepts to help you understand **React's state management** and **event handling**.
+
+---
+
+## 📚 What You'll Learn
+-State: A Component's Memory
+-Render and Commit
+-State as a Snapshot
+-Queueing a Series of State Updates
+-Updating Objects and nested objects in State
+-Updating Arrays in State
+- 🧩 How to use `useState` hook
+- 🎯 Updating state with event handlers
+- 🔁 Understanding immutability in state
+- 🧬 Shallow vs Deep updates
+- 📌 Controlled input fields
+- 🖱️ Handling mouse events (`onClick`, `onChange`, `onPointerMove`, etc.)
+- 🔄 Best practices for nested state updates
+
+---
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
