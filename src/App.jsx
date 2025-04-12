@@ -4,6 +4,7 @@ import Form from './Form.jsx';
 import Counter from './Counter.jsx';
 import Batching from './Batching.jsx';
 import MovingDot from './MovingDot.jsx';
+import MultipleObjectsState from './assets/multipleObjectsState.jsx';
 export default function Gallery() {
   const [index, setIndex] = useState(0);
 
@@ -35,6 +36,7 @@ export default function Gallery() {
       <Counter></Counter>
       <Batching></Batching>
       <MovingDot></MovingDot>
+      <MultipleObjectsState></MultipleObjectsState>
     </div>
   );
 }
